@@ -1,0 +1,100 @@
+.container{
+    display: grid;
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    grid-gap:10px;
+    grid-template-areas:"header header""sidebar main";
+    grid-template-columns:300px 600px;
+    grid-template-rows: 150px 820px;
+}
+
+header{
+    font-family: Cambria;
+    text-align: center;
+    color:white;
+    background-color: deeppink;
+    grid-area: header;
+    border: black 3px solid;
+    border-radius: 20px;
+}
+.sidebar{
+   grid-area: sidebar;
+}
+
+img{
+    border-radius: 100px;
+    position: static;
+    left: 100px;
+    top: 10px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.box{
+    border:solid 4px white;
+    position:relative;
+    top: 10px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.box1{
+    border-bottom:solid 4px white;
+    position:relative;
+    top: 10px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.box2{
+    border:solid 3px black;
+    border-radius: 20px;
+    background-color: deeppink;
+    color:black;
+    font-family: cambria;
+    text-align: center;
+}
+
+.box3{
+    border-bottom:black 2px solid;
+    background-color: white;
+    color: black;
+    font-family: 'Lucida Sans';
+    height:185px;
+    position: static;
+   
+}
+
+.bio, .workexp, .education, .skill{
+    text-align: center;
+    font-family: Cambria;
+    font-size: 15px;
+}
+
+.contact, .social{
+    text-align: center;
+    font-family: Cambria;
+    font-size: 18px;
+}
+
+.yr1, .yr2{
+    float: left;
+}
+
+.job, .education{
+    float: center;
+}
+
+ul{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-size: 15px;
+}
+p{
+    font-size: 18px;
+}
